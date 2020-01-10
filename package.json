@@ -1,0 +1,31 @@
+{
+  "name": "base-guibellotti",
+  "version": "1.1.0",
+  "description": "Deploy project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Erro: teste não especificado\" && exit 1"
+  },
+  "author": "Guilherme Bellotti",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "dotenv": "^8.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-prompt": "^1.2.0",
+    "gulp-terser": "^1.1.7",
+    "gulp-version-number": "^0.2.4",
+    "gulp-zip": "^4.2.0",
+    "pump": "^3.0.0",
+    "run-sequence": "^2.2.1",
+    "vinyl-ftp": "^0.6.1"
+  },
+  "dependencies": {
+    "npm": "^6.13.6"
+  }
+}

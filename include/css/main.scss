@@ -1,0 +1,111 @@
+/* Imports */
+@import 'bootstrap.min.css';
+@import 'owl/owl.carousel.scss';
+
+/* Colors */
+$default: #fff;
+$secondary: #000;
+
+/* Defaults */
+body{
+  background-color: $default;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Font size */
+h3 {
+  font-size: .9rem;
+}
+p {
+  font-size: .75rem;
+}
+
+/* Animations */
+$transitions: all .175s;
+
+/* Style content */
+#banner_parallax{
+  a {
+    display: block;
+  }
+  .banner{
+    background-attachment: fixed;
+    background-image: url(../images/01-Principal_Desktop.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto;    
+    height: 900px;
+    width: 100%;
+  }
+}
+
+#content{
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+  .item{
+    transition: $transitions;
+  }
+  .banner_highlight{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 320px;
+    width: 100%;
+    &:hover{
+      .text{
+        opacity: 1;
+      }
+    }
+    .text{
+      align-self: flex-end;
+      background-color: rgba($secondary, $alpha: .7);
+      color: $default;
+      height: max-content;
+      padding: 1rem;
+      opacity: 0;
+      transition: $transitions;
+      h3{
+        margin-bottom: .27rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      p{        
+        display: block;
+        display: -webkit-box;
+        margin-bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  .banner_01{
+    background-image: url(../images/03-Intermediario01.jpg);    
+  }
+  .banner_02{
+    background-image: url(../images/04-Intermediario02.jpg);
+  }
+  .banner_03{
+    background-image: url(../images/05-Intermediario03.jpg);
+    height: 657px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #banner_parallax .banner {
+    background-position: -550px top;
+  }
+}
+@media (max-width: 575px) {
+  #banner_parallax .banner {
+    background-attachment: scroll;
+    background-image: url(../images/01-Principal_Desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    min-height: 450px;
+  }
+}
